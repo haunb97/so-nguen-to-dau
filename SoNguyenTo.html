@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nguento</title>
+</head>
+<body>
+<script>
+
+    function check_N(N) {
+
+
+
+        if (N <= 1) {
+            return false;}
+        for (let i = 2; i < N; i++) {
+                if (N % i == 0) {
+                    return false ;
+                }
+            }
+        return true;
+
+    }
+function display( Number){
+        let count = 0 ;
+        let j =2 ;
+        while(count<Number){
+            if(check_N(j)==true){
+                count++;
+                document.write(' '+j+ " ");
+
+            }
+            j++;
+        }
+    }
+
+    let c = parseInt(prompt('nhập vào c'));
+   display(c);
+
+
+
+</script>
+</body>
+</html>
